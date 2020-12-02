@@ -2,6 +2,8 @@
     <head>
         <title>OTTO Market Categories</title>
         <script src="index.js"></script>
+        <link href="style.css" rel="stylesheet">
+
         <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
         <meta charset="utf-8"/>
     </head>
@@ -36,7 +38,7 @@
                 const fuse = new Fuse(index, options);
                 
 
-                let searchItem = document.getElementById('searchBar').value
+                let searchItem = document.getElementById('itemInput').value
                 console.log(searchItem);
 
                 result = fuse.search(searchItem)
@@ -44,25 +46,32 @@
                 let output = ''
 
                 for (let i = 0; i < result.length; i++) {
-                    output += '<div>' + result[i].item.name +'</div>'
+                    output += '<div class="item">' + result[i].item.name +'</div>'
                 }
                 document.getElementById('output').innerHTML = output
 
             }
         </script>
-        <h1>Test</h1>
-        <input id="searchBar" type="text" onkeyup="search()">
-        <div id="output">output</div>
-        <script>
-            //console.log(index[0].name)
-            //console.log(document.getElementById('output'))
-            document.getElementById('output').innerHTML = index[0].name
-        </script>
 
-        <script >
+        <div id="topBar"><img id="topBarimg" src="images/logo.png"></div>
+        <div id="SideBar">
+            <div class="sideBarItem sideBarSelected" id="create">
+                Categories
+            </div>
+        
+        </div>
+        <div id="spacer"></div>
+        <div id="content">
+            <h1>Categories</h1>
+            <div id="line"></div>
         
             
-        </script>
+            <input id="itemInput" type="text" onkeyup="search()">
+
+            <div id="output"></div>
+        </div>
+       
+       
 
         
     </body>
