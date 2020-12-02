@@ -2,6 +2,7 @@ rm -r public
 mkdir public
 mkdir public/images
 mkdir public/jsons
+mkdir jsons
 python3 download.py
 
 cp index.html public/index.html
