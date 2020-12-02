@@ -4,6 +4,24 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+#backButton {
+    background-color: rgb(210, 0, 31);
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    right: 50px;
+    padding: 5px;
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#backButton:Hover {
+    cursor: pointer;
+    background-color: #A10216;
+
+}
+
 #topBar {
     height: 70px;
     width: 100%;
@@ -124,3 +142,21 @@ body {
 .itemButton:Hover {
     cursor: pointer;
     background-color: #A10216;
+}
+
+#table {
+    margin-left: 20px;
+    overflow: scroll;
+}
+
+#attributeTable {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#attributeTable th, td {
+    border: 1px solid black;
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
