@@ -49,13 +49,7 @@ def writeCategories(input):
     outputString = 'let categories = ['
     for x in input:
         outputString += '{' 
-        outputString += 'categoryGroup: "' +  x['categoryGroup'] + '",'
-        outputString += 'categories: ['
-
-        for y in x['categories']:
-            outputString += 
-
-
+        outputString += 'categoryGroup: "' +  x['categoryGroup'] + '"'
         outputString += '},'
     outputString = outputString[:-1]
 
@@ -68,4 +62,4 @@ categories = getCategories(token)
 index = createIndexing(categories)
 
 writeIndex(index)
-writeCategories(categories['categoryGroups'])
+#writeCategories(categories['categoryGroups'])
