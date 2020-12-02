@@ -14,7 +14,7 @@ def getToken():
 def getCategories(token):
     data = {}
     header = {'Authorization': 'Bearer ' + token}
-    r = requests.get('https://api.otto.market/v1/products/categories?limit=100', data=data, headers=header)
+    r = requests.get('https://api.otto.market/v1/products/categories?limit=10', data=data, headers=header)
     result = json.loads(r.text)
     print('downloaded file')
     return result
@@ -44,8 +44,9 @@ def writeFile(input, name):
 def writeIndex(input):
     outputString = 'let index = ['
     for x in input:
-        outputString += '{name:"' + x.name + '",'
-        outputString += 'index:"' + str(x.index) + '"},'
+        outputString += ''
+        outputString += '{n:"' + x.name + '",'
+        outputString += 'i:"' + str(x.index) + '"},'
     outputString = outputString[:-1]    
     outputString += ']'
 
@@ -61,6 +62,10 @@ def writeCategories(input):
 
     writeFile(outputString, 'categories.js')
 
+def storeFiles(data, fileName):
+    header = ''
+    with open('jsons/' + str(fileName)+ '.json', 'w') as outfile:
+        json.dump(data, outfile)
 
 
 
@@ -69,4 +74,8 @@ categories = getCategories(token)
 index = createIndexing(categories)
 
 writeIndex(index)
+for x in range(len(categories['categoryGroups'])):
+    storeFiles(categories['categoryGroups'][x], x)
+#storeJSON(categories['categoryGroups'][0])
+#writeFile(categories['categoryGroups'][0], '0.json')
 #writeCategories(categories['categoryGroups'])

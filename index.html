@@ -23,15 +23,15 @@
                     shouldSort: true,
                     // includeMatches: false,
                     // findAllMatches: false,
-                    // minMatchCharLength: 1,
+                    minMatchCharLength: 1,
                     // location: 0,
-                    // threshold: 0.6,
+                    threshold: 0.4,
                     // distance: 100,
                     // useExtendedSearch: false,
                     // ignoreLocation: false,
                     // ignoreFieldNorm: false,
                     keys: [
-                        "name"
+                        "n"
                     ]
                 };
 
@@ -46,12 +46,14 @@
                 let output = ''
 
                 for (let i = 0; i < result.length; i++) {
-                    output += '<div class="item">' + result[i].item.name +'</div>'
+                    output += '<div class="item">' + result[i].item.n +' <div onmousedown="window.location=\'/onecategorie.html?index='+ result[i].item.i + '\'" class="itemButton">Open</div></div>'
                 }
                 document.getElementById('output').innerHTML = output
 
             }
         </script>
+
+
 
         <div id="topBar"><img id="topBarimg" src="images/logo.png"></div>
         <div id="SideBar">

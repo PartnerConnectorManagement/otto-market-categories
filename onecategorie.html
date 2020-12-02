@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>OTTO Market Categories</title>
+        <script src="index.js"></script>
+        <link href="style.css" rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+        <meta charset="utf-8"/>
+    </head>
+
+    <body>
+        <script>
+            loadItems()
+            function loadItems() {
+                var url_string = window.location.href;
+                var url  = new URL(url_string);
+                var index = url.searchParams.get('index')
+                console.log(index)
+
+                var xhttp = new XMLHttpRequest()
+
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        
+                        let json = JSON.parse(this.responseText)
+                        console.log(json);
+                        document.getElementById('heading').innerHTML = 'Categories > ' + json.categoryGroup;
+                        let output = ''
+                        output += '<tr><th class="header nameColunmHeader">Name</th><th class="header firstColunm">attributeGroup</th><th class="header">type</th><th class="header">multiValue</th><th class="header">featureRelevance</th><th class="header">relevance</th><th class="header">description</th><th class="header">exampleValues</th><th class="header">reference</th></tr>';
+                        for (let i = 0; i < json.attributes.length; i++) {
+                            output += '<tr class="row">';
+                            output += '<td class="rowitem nameColunm">' + json.attributes[i].name + '</td>'
+                            output += '<td class="rowitem nameColunm">' + json.attributes[i].attributeGroup + '</td>'
+                            output += '<td class="rowitem nameColunm">' + json.attributes[i].type + '</td>'
+                            output += '<td class="rowitem nameColunm">' + json.attributes[i].multiValue + '</td>'
+
+                            output += '<td class="rowitem nameColunm">'
+                            for (let ii = 0; ii < json.attributes[i].featureRelevance.length; ii++) {
+                                output += '- ' + json.attributes[i].featureRelevance[ii]
+                                if (ii !== json.attributes[i].featureRelevance.length-1) {
+                                    output += '<br>'
+                                }
+                            }
+                            output += '</td>'
+
+
+                            
+                            output += '<td class="rowitem nameColunm">' + json.attributes[i].relevance + '</td>'
+                            output += '<td class="rowitem nameColunm">' + json.attributes[i].description + '</td>'
+
+                            output += '<td class="rowitem nameColunm">'
+                            if (json.attributes[i].exampleValues != null) {
+                                for (let ii = 0; ii < json.attributes[i].exampleValues.length; ii++) {
+                                output += '- ' + json.attributes[i].exampleValues[ii]
+                                if (ii !== json.attributes[i].exampleValues.length-1) {
+                                    output += '<br>'
+                                }
+                            }
+                            }
+                            
+                            output += '</td>'
+
+                            output += '<td class="rowitem nameColunm">' + json.attributes[i].reference + '</td>'
+
+                            output += '</tr>';
+
+                        }
+                        document.getElementById('attributeTable').innerHTML = output
+
+                    }
+                };
+                xhttp.open('GET', '/jsons/' + index + '.json', true);
+                xhttp.send();
+            }
+        </script>
+
+        <div id="topBar"><img id="topBarimg" src="images/logo.png"></div>
+        <div id="SideBar">
+            <div class="sideBarItem sideBarSelected" id="create">
+                Categories
+            </div>
+        
+        </div>
+        <div id="spacer"></div>
+        <div id="content">
+            <h1 id="heading">Categories > </h1>
+            <div id="line"></div>
+            <div id="backButton" onmousedown="window.location = '/'">Zurück</div>
+            
+            <div id="table">
+                <table id="attributeTable">
+                    <tr>
+                        <th class="header nameColunmHeader">Name</th>
+                        <th class="header firstColunm">attributeGroup</th>
+                        <th class="header">type</th>
+                        <th class="header">multiValue</th>
+                        <th class="header">featureRelevance</th>
+                        <th class="header">relevance</th>
+                        <th class="header">description</th>
+                        <th class="header">exampleValues</th>
+                        <th class="header">reference</th>
+                    </tr>
+
+                    <tr class="row">
+                        <td class="rowitem nameColunm">Name</td>
+                        <td class="rowitem firstColunm">attributeGroup</td>
+                        <td class="rowitem">type</td>
+                        <td class="rowitem">multiValue</td>
+                        <td class="rowitem">featureRelevance</td>
+                        <td class="rowitem">relevance</td>
+                        <td class="rowitem">description</td>
+                        <td class="rowitem">exampleValues</td>
+                        <td class="rowitem">reference</td>
+                    </tr>
+
+                    <p id="outputTable"></p>
+                    
+                </table>
+    
+                
+            </div>
+
+
+        </div>
+       
+       
+
+        
+    </body>
+
+
+
+</html>
