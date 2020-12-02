@@ -14,7 +14,7 @@ def getToken():
 def getCategories(token):
     data = {}
     header = {'Authorization': 'Bearer ' + token}
-    r = requests.get('https://api.otto.market/v1/products/categories?limit=2000', data=data, headers=header)
+    r = requests.get('https://api.otto.market/v1/products/categories?limit=100', data=data, headers=header)
     result = json.loads(r.text)
     print('downloaded file')
     return result
