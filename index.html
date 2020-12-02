@@ -1,1 +1,72 @@
-<h1>Test</h1>
+<html>
+    <head>
+        <title>OTTO Market Categories</title>
+        <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+        <meta charset="utf-8"/>
+    </head>
+
+    <body>
+
+        <script type="module">
+            import Fuse from 'https://cdn.jsdelivr.net/npm/fuse.js@6.4.3/dist/fuse.esm.js'
+        </script>
+
+        <script>
+            function search() {
+            
+                const options = {
+                    isCaseSensitive: false,
+                    // includeScore: false,
+                    shouldSort: true,
+                    // includeMatches: false,
+                    // findAllMatches: false,
+                    // minMatchCharLength: 1,
+                    // location: 0,
+                    // threshold: 0.6,
+                    // distance: 100,
+                    // useExtendedSearch: false,
+                    // ignoreLocation: false,
+                    // ignoreFieldNorm: false,
+                    keys: [
+                        "name"
+                    ]
+                };
+
+                const fuse = new Fuse(index, options);
+                
+
+                let searchItem = document.getElementById('searchBar').value
+                console.log(searchItem);
+
+                result = fuse.search(searchItem)
+                console.log(result);
+                let output = ''
+
+                for (let i = 0; i < result.length; i++) {
+                    output += '<div>' + result[i].item.name +'</div>'
+                }
+                document.getElementById('output').innerHTML = output
+
+            }
+        </script>
+        <h1>Test</h1>
+        <input id="searchBar" type="text" onkeyup="search()">
+        <div id="output">output</div>
+        <script>
+            //console.log(index[0].name)
+            //console.log(document.getElementById('output'))
+            document.getElementById('output').innerHTML = index[0].name
+        </script>
+
+        <script >
+        
+            
+        </script>
+
+        
+    </body>
+
+
+
+</html>

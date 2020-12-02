@@ -19,14 +19,19 @@ def getCategories(token):
     print('downloaded file')
     return result
     print(result['categoryGroups'][0])
-    
+
+class Index:
+    def __init__(self, name, index):
+        self.name = name
+        self.index = index
 
 def createIndexing(json):
     index = []
     #print(len(json['categoryGroups']))
     for x in range(len(json['categoryGroups'])):
         for y in range(len(json['categoryGroups'][x]['categories'])):
-            index.append(json['categoryGroups'][x]['categories'][y])
+            newIndex = Index(json['categoryGroups'][x]['categories'][y], x)
+            index.append(newIndex)
     #print(index)
     return index
 
@@ -39,7 +44,8 @@ def writeFile(input, name):
 def writeIndex(input):
     outputString = 'let index = ['
     for x in input:
-        outputString += '"' + x + '",'
+        outputString += '{name:"' + x.name + '",'
+        outputString += 'index:"' + str(x.index) + '"},'
     outputString = outputString[:-1]    
     outputString += ']'
 
@@ -54,6 +60,7 @@ def writeCategories(input):
     outputString = outputString[:-1]
 
     writeFile(outputString, 'categories.js')
+
 
 
 
