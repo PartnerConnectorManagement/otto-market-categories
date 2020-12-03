@@ -15,6 +15,10 @@
         </script>
 
         <script>
+            window.onload = function() {
+                search();
+            }
+
             function search() {
             
                 const options = {
@@ -38,16 +42,25 @@
                 const fuse = new Fuse(index, options);
                 
 
-                let searchItem = document.getElementById('itemInput').value
-                console.log(searchItem);
-
-                result = fuse.search(searchItem)
-                console.log(result);
+                let searchItem = document.getElementById('itemInput').value;
                 let output = ''
+                if (searchItem == '') {
+                    for (let i = 0; i < index.length; i++) {
+                        output += '<div class="item">' + index[i].n +' <div onmousedown="window.location=\'onecategorie.html?index='+ index[i].i + '\'" class="itemButton">Open</div></div>'
+                    }
+                } else {
+                    console.log(index);
 
-                for (let i = 0; i < result.length; i++) {
-                    output += '<div class="item">' + result[i].item.n +' <div onmousedown="window.location=\'/onecategorie.html?index='+ result[i].item.i + '\'" class="itemButton">Open</div></div>'
+                    result = fuse.search(searchItem)
+                    console.log(result);
+                    
+
+                    for (let i = 0; i < result.length; i++) {
+                        output += '<div class="item">' + result[i].item.n +' <div onmousedown="window.location=\'onecategorie.html?index='+ result[i].item.i + '\'" class="itemButton">Open</div></div>'
+                    }
                 }
+
+                
                 document.getElementById('output').innerHTML = output
 
             }
