@@ -10,6 +10,68 @@
 
     <body>
         <script>
+            
+            let result;
+
+            function pushByValue(helper, attributes, value) {
+                for (let i = 0; i < attributes.length; i++) {
+                    if (attributes[i].relevance === value) {
+                        helper.push(attributes[i])
+                    }
+                }
+                return helper;
+            }
+
+            function sortByRelevance(attributes) {
+                let helper = []
+                helper = pushByValue(helper, attributes, 'HIGH');
+                helper = pushByValue(helper, attributes, 'MEDIUM');
+                helper = pushByValue(helper, attributes, 'LOW');
+
+                return helper;
+            }
+
+            function printAttributes(attributes) {
+                let output = ''
+                output += '<tr><th class="header nameColunmHeader">Name</th><th class="header firstColunm">attributeGroup</th><th class="header">type</th><th class="header">multiValue</th><th class="header">featureRelevance</th><th class="header">relevance</th><th class="header">description</th><th class="header">exampleValues</th><th class="header">reference</th></tr>';
+                for (let i = 0; i < attributes.length; i++) {
+                    output += '<tr class="row">';
+                    output += '<td class="rowitem nameColunm">' + attributes[i].name + '</td>'
+                    output += '<td class="rowitem">' + attributes[i].attributeGroup + '</td>'
+                    output += '<td class="rowitem">' + attributes[i].type + '</td>'
+                    output += '<td class="rowitem">' + attributes[i].multiValue + '</td>'
+
+                    output += '<td class="rowitem"><ul>'
+
+                    for (let ii = 0; ii < attributes[i].featureRelevance.length; ii++) {
+                        output += '<li>' + attributes[i].featureRelevance[ii] + '</li>'
+                    
+                    } 
+                    output += '</ul></td>'
+
+
+                    
+                    output += '<td class="rowitem">' + attributes[i].relevance + '</td>'
+                    output += '<td class="rowitem">' + attributes[i].description + '</td>'
+
+                    output += '<td class="rowitem exampleValues"><ul>'
+                    if (attributes[i].exampleValues != null) {
+                        for (let ii = 0; ii < attributes[i].exampleValues.length; ii++) {
+                            output += '<li>' + attributes[i].exampleValues[ii] + '</li>'
+
+                    }
+                    }
+                    
+                    output += '</ul></td>'
+
+                    output += '<td class="rowitem">' + attributes[i].reference + '</td>'
+
+                    output += '</tr>';
+
+                }
+                document.getElementById('attributeTable').innerHTML = output
+            }
+            
             loadItems()
             function loadItems() {
                 var url_string = window.location.href;
@@ -24,48 +86,11 @@
                         
                         let json = JSON.parse(this.responseText)
                         console.log(json);
+                        result = json;
+                        //console.log(sortByProperty(json.attributes, 'featureRelevance', 1))
                         document.getElementById('heading').innerHTML = 'Categories > ' + json.categoryGroup;
-                        let output = ''
-                        output += '<tr><th class="header nameColunmHeader">Name</th><th class="header firstColunm">attributeGroup</th><th class="header">type</th><th class="header">multiValue</th><th class="header">featureRelevance</th><th class="header">relevance</th><th class="header">description</th><th class="header">exampleValues</th><th class="header">reference</th></tr>';
-                        for (let i = 0; i < json.attributes.length; i++) {
-                            output += '<tr class="row">';
-                            output += '<td class="rowitem nameColunm">' + json.attributes[i].name + '</td>'
-                            output += '<td class="rowitem nameColunm">' + json.attributes[i].attributeGroup + '</td>'
-                            output += '<td class="rowitem nameColunm">' + json.attributes[i].type + '</td>'
-                            output += '<td class="rowitem nameColunm">' + json.attributes[i].multiValue + '</td>'
-
-                            output += '<td class="rowitem nameColunm">'
-                            for (let ii = 0; ii < json.attributes[i].featureRelevance.length; ii++) {
-                                output += '- ' + json.attributes[i].featureRelevance[ii]
-                                if (ii !== json.attributes[i].featureRelevance.length-1) {
-                                    output += '<br>'
-                                }
-                            }
-                            output += '</td>'
-
-
-                            
-                            output += '<td class="rowitem nameColunm">' + json.attributes[i].relevance + '</td>'
-                            output += '<td class="rowitem nameColunm">' + json.attributes[i].description + '</td>'
-
-                            output += '<td class="rowitem nameColunm">'
-                            if (json.attributes[i].exampleValues != null) {
-                                for (let ii = 0; ii < json.attributes[i].exampleValues.length; ii++) {
-                                output += '- ' + json.attributes[i].exampleValues[ii]
-                                if (ii !== json.attributes[i].exampleValues.length-1) {
-                                    output += '<br>'
-                                }
-                            }
-                            }
-                            
-                            output += '</td>'
-
-                            output += '<td class="rowitem nameColunm">' + json.attributes[i].reference + '</td>'
-
-                            output += '</tr>';
-
-                        }
-                        document.getElementById('attributeTable').innerHTML = output
+                        
+                        printAttributes(sortByRelevance(json.attributes))
 
                     }
                 };
@@ -83,7 +108,7 @@
         </div>
         <div id="spacer"></div>
         <div id="content">
-            <h1 id="heading">Categories > </h1>
+            <h1 id="heading" onmousedown="console.log(result)">Categories > </h1>
             <div id="line"></div>
             <div id="backButton" onmousedown="window.location = '/'">Zurück</div>
             
