@@ -5,8 +5,8 @@ mkdir public/jsons
 mkdir jsons
 python3 download.py
 
-cp index.html public/index.html
-cp style.css public/style.css
-cp index.js public/index.js
+cp *.html public/
+cp *.css public/
+cp *.js public/
 cp -a images/. public/images
 cp -a jsons/. public/jsons
