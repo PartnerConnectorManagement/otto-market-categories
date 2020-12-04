@@ -17,6 +17,10 @@ jobs:
           submodules: true
       - name: Build website
         run: ./build.sh
+        env: 
+          OK_USERNAME: ${{ secrets.OK_USERNAME }}
+          OK_PASSWORD: ${{ secrets.OK_PASSWORD }}
+          OK_CLIENT_ID: ${{ secrets.OK_CLIENT_ID }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
