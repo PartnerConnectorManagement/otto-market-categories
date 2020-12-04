@@ -21,16 +21,17 @@ def getCategories(token):
     print(result['categoryGroups'][0])
 
 class Index:
-    def __init__(self, name, index):
+    def __init__(self, name, index, group):
         self.name = name
         self.index = index
+        self.group = group
 
 def createIndexing(json):
     index = []
     #print(len(json['categoryGroups']))
     for x in range(len(json['categoryGroups'])):
         for y in range(len(json['categoryGroups'][x]['categories'])):
-            newIndex = Index(json['categoryGroups'][x]['categories'][y], x)
+            newIndex = Index(json['categoryGroups'][x]['categories'][y], x, json['categoryGroups'][x]['categoryGroup'])
             index.append(newIndex)
     #print(index)
     return index
@@ -46,6 +47,7 @@ def writeIndex(input):
     for x in input:
         outputString += ''
         outputString += '{n:"' + x.name + '",'
+        outputString += 'g: "' + x.group + '",' 
         outputString += 'i:"' + str(x.index) + '"},'
     outputString = outputString[:-1]    
     outputString += ']'

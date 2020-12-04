@@ -35,7 +35,8 @@
                     // ignoreLocation: false,
                     // ignoreFieldNorm: false,
                     keys: [
-                        "n"
+                        "n",
+                        "g"
                     ]
                 };
 
@@ -46,7 +47,7 @@
                 let output = ''
                 if (searchItem == '') {
                     for (let i = 0; i < index.length; i++) {
-                        output += '<div class="item">' + index[i].n +' <div onmousedown="window.location=\'onecategorie.html?index='+ index[i].i + '\'" class="itemButton">Open</div></div>'
+                        output += '<div class="item">' + index[i].n + ' (' + index[i].g +') <div onmousedown="window.location=\'onecategorie.html?index='+ index[i].i + '\'" class="itemButton">Open</div></div>'
                     }
                 } else {
                     console.log(index);
@@ -56,7 +57,7 @@
                     
 
                     for (let i = 0; i < result.length; i++) {
-                        output += '<div class="item">' + result[i].item.n +' <div onmousedown="window.location=\'onecategorie.html?index='+ result[i].item.i + '\'" class="itemButton">Open</div></div>'
+                        output += '<div class="item">' + result[i].item.n + ' (' + result[i].item.g +') <div onmousedown="window.location=\'onecategorie.html?index='+ result[i].item.i + '\'" class="itemButton">Open</div></div>'
                     }
                 }
 
