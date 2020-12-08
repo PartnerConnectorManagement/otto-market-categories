@@ -1,0 +1,7 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Set-Typ,Produktdetails,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Farbe,Farbe & Material,STRING,False,VARIATION_THEME,HIGH,,"SCHWARZ, hellblau, zyklam, edelstahlfarben, ziegelrot",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

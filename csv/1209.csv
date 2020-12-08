@@ -1,0 +1,12 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Set-Info,Allgemein,STRING,True,TITLE,LOW,,,,,
+Serie,Serie,STRING,False,,HIGH,,Kliki Fresh,,,
+Set-Typ,Allgemein,STRING,False,TITLE,HIGH,,"Set, Packung, Spar-Set",,,
+Lieferumfang,Allgemein,STRING,True,PRODUCT_DETAILS,HIGH,,"Clips, Tüten",,,
+Farbe,Farbe & Material,STRING,False,VARIATION_THEME,HIGH,,"weiß, rot, hellblau, messing, zyklam",,,
+Breite,Maße & Gewicht,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Material,Farbe & Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Kunststoff, Saphir, Gusseisen, Stahl beschichtet mit Emaille / Silargan®, Keramik",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Allgemein,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,
+Zielgruppe,Allgemein,STRING,False,NAVIGATION,HIGH,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

@@ -1,0 +1,12 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Produktdetails,STRING,False,TITLE,LOW,,"Set, Kombi-Set, Packung, Komplett-Set, Spar-Set",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Ausstattung,Produktdetails,STRING,True,PRODUCT_DETAILS,MEDIUM,,"ergonomischer Handgriff, Abdeckung, Räder",,,
+Arbeitsbreite,Produktdetails,FLOAT,False,"TITLE, PRODUCT_DETAILS",MEDIUM,,,,,
+Material,Farbe & Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",MEDIUM,,"Kunststoff, Aluminium, Edelstahl, Stahl",,,
+Wurfweite maximal,Produktdetails,FLOAT,False,PRODUCT_DETAILS,LOW,,,,,
+Füllmenge,Produktdetails,FLOAT,False,"TITLE, PRODUCT_DETAILS",HIGH,,,,,
+Artikelhinweise,Hinweise,STRING,True,PRODUCT_DETAILS,HIGH,,Alle Angaben sind ca.-Angaben,,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

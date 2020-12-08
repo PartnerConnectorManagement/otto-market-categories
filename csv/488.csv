@@ -1,0 +1,10 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Artikelbezeichnung,STRING,False,TITLE,LOW,,"Set, Spar-Set",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Set-Info,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Passend für,Produktdetails,STRING,True,PRODUCT_DETAILS,HIGH,,Haarentferner »Flash & Go«,,,
+Farbe,Farbe & Material,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"weiß, hellblau, zyklam, edelstahlfarben, ziegelrot",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Allgemein,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,
+Zielgruppe,Allgemein,STRING,True,NAVIGATION,HIGH,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

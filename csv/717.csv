@@ -1,0 +1,9 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,HIGH,,"zur Abdeckung, 2x50 Liter, zur Abdeckung, 3x50 Liter",,,
+Set-Typ,Produktdetails,STRING,False,TITLE,LOW,,"Set, Kombi-Set, Packung, Komplett-Set, Spar-Set",,,
+Inhalt,Produktdetails,FLOAT,False,"TITLE, VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Einsatzbereich,Produktdetails,STRING,True,PRODUCT_DETAILS,HIGH,,"außen, innen",,,
+Artikelhinweise,Hinweise,STRING,True,PRODUCT_DETAILS,HIGH,,Alle Angaben sind ca.-Angaben,,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

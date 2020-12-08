@@ -1,0 +1,13 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Produktdetails,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Warnhinweise,Hinweise,STRING,True,PRODUCT_DETAILS,LOW,,"Achtung. Benutzung unter unmittelbarer Aufsicht von Erwachsenen., Nicht aufgeblasene Ballons sind von Kindern fernzuhalten. Geplatzte Ballons sind unverzüglich zu entfernen., Achtung! Benutzung unter unmittelbarer Aufsicht von Erwachsenen., Achtung! Nicht für Kinder unter 36 Monaten geeignet. Erstickungsgefahr aufgrund verschluckbarer Kleinteile., Achtung! Enthält Duftstoffe, die Allergien auslösen können.",,,
+Gewicht,Maße & Gewicht,FLOAT,False,PRODUCT_DETAILS,HIGH,,,,,
+Größe,Maße & Gewicht,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,1,,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Material,Farbe & Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Kunststoff, Silikon, Nylon, Stahl, Baumwolle",,,
+Farbe,Farbe & Material,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"weiß, hellblau, zyklam, edelstahlfarben, ziegelrot",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Zielgruppe,Produktdetails,STRING,False,NAVIGATION,HIGH,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,
+Geschlecht,Produktdetails,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,

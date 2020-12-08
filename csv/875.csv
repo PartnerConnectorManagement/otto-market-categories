@@ -1,0 +1,13 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Artikelbezeichnung,STRING,False,TITLE,LOW,,"Set, Inhalt, Packung, Spar-Set",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Warnhinweise,Hinweise,STRING,True,PRODUCT_DETAILS,LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,HIGH,,"(Cremebereiter), 0,5 Liter, 0,5 Liter",,,
+Material,Material,STRING,False,"TITLE, VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Aluminium, Edelstahl, Natur-Granit, Silikon, Nylon",,,
+Fassungsvermögen,Maßangaben,FLOAT,False,"VARIATION_THEME, TOPINFO, PRODUCT_DETAILS",HIGH,,,,,
+Farbe,Produktdetails,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"silberfarben, hellblau, messing, zyklam, edelstahlfarben",,,
+Material Griffe,Material,STRING,True,PRODUCT_DETAILS,LOW,,"Edelstahl, Natur-Granit, Silikon, Stahl, Gusseisen",,,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Allgemein,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,
+Zielgruppe,Allgemein,STRING,False,NAVIGATION,HIGH,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

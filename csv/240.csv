@@ -1,0 +1,8 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Allgemein,STRING,False,,LOW,,"Set, Packung, Spar-Set",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Set-Info,Allgemein,STRING,True,,LOW,,,,,
+Weitere Vorteile,Allgemein,STRING,True,PRODUCT_DETAILS,HIGH,,"– einfach zwischen die Holzkohle bzw. Grillbriketts im Grill legen, nur 10 bis 15 Minuten bis zur optimalen Grillglut",,,
+Farbe,Farbe & Material,STRING,False,"VARIATION_THEME, TOPINFO, PRODUCT_DETAILS",HIGH,,"schwarz, hellblau, messing, zyklam, edelstahlfarben",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

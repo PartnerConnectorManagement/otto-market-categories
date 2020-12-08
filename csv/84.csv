@@ -1,0 +1,13 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Artikelbezeichnung,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,HIGH,,zur Kräftigung der Becken- und Unterleibsmuskulatur,,,
+Breite,Maßangaben,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Höhe,Maßangaben,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Tiefe,Maßangaben,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Material,Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Polyprophylen, Stahl, Carbonstahl, Edelstahl, Metall",,,
+Farbe,Farbe,STRING,False,"VARIATION_THEME, TOPINFO, PRODUCT_DETAILS",HIGH,,"blau, hellblau, zyklam, edelstahlfarben, ziegelrot",,,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Allgemein,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,
+Zielgruppe,Allgemein,STRING,False,NAVIGATION,HIGH,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

@@ -1,0 +1,8 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,,LOW,,,,,
+Set-Typ,Produktdetails,STRING,False,,LOW,,"Set, Packung, Spar-Set",,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,HIGH,,Labyrinth für Mäuse Nager - Spielzeug für Käfig oder Terrarium - Zubehör Spielplatz Wohnlabyrinth für Käfige - aus Holz,,,
+Tierart,Produktdetails,STRING,True,NAVIGATION,HIGH,,"Mäuse, Ratten, Großsittiche, Igel, Degus",,"Ratten, Großsittiche, Degus, Zwergkaninchen, Chinchillas, Meerschweinchen, Rennmäuse, Mäuse, Wildvögel, Papageien, Hamster, Kanarienvögel, Wellensittiche",
+Farbe,Produktdetails,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"braun, hellblau, messing, zyklam, edelstahlfarben",,,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

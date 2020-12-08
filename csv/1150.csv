@@ -1,0 +1,8 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Artikelbezeichnung,STRING,False,TITLE,LOW,,"Set, Inhalt, Packung, Spar-Set",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,HIGH,,4x Tischdecken Klammern - Tisch Clip Set für Tischtuch Tischklammern Biertisch - Tischdeckenklammern transparent,,,
+Material,Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Kunststoff, Natur-Granit, Silikon, Nylon, Stahl",,,
+Farbe,Farbe,STRING,False,VARIATION_THEME,HIGH,,"weiß, hellblau, messing, zyklam, edelstahlfarben",,,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

@@ -1,0 +1,13 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Produktdetails,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,HIGH,,C-Dur diatonische Tonleiter,,,
+Themen,Allgemein,STRING,False,,HIGH,,Musik,,,
+Material,Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Kunststoff, Rohholz, Holz teilmassiv, Holz, Buchenholz",,,
+Farbe,Farbe,STRING,False,VARIATION_THEME,HIGH,,"bunt, hellblau, zyklam, edelstahlfarben, ziegelrot",,,
+Anlässe,Allgemein,STRING,True,,HIGH,,"Ostern, Valentinstag, Ferien, Urlaub, Vatertag",,,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Allgemein,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,
+Zielgruppe,Allgemein,STRING,False,NAVIGATION,HIGH,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,
+Altersempfehlung,Hinweise,STRING,False,PRODUCT_DETAILS,LOW,,,"ab 15 Jahren, ab 11 Jahren, ab 6 Monaten, ab 12 Monaten, ab 13 Jahren, ab 10 Jahren, ab 12 Jahren, ab 14 Jahren, ab 16 Jahren, für Erwachsene, ab 17 Jahren, ab 18 Jahren, ab 18 Monaten, ab 3 Monaten, ab 4 Jahren, ab 9 Monaten, ab 3 Jahren, Es liegt keine Altersempfehlung vor, ab 5 Jahren, ab 2 Jahren, ab 6 Jahren, ab 7 Jahren, ab 8 Jahren, ab 9 Jahren, ab Geburt",,

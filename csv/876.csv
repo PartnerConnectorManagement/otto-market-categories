@@ -1,0 +1,13 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Artikelbezeichnung,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Stärke Saiten,Produktdetails,STRING,False,PRODUCT_DETAILS,LOW,,"042, 050, 030, 031, 010",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Artikelbezeichnung,STRING,False,,LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,MEDIUM,,"für Gitarre aus Stahl - Gitarrensaiten 6 Saiten-Set - für Akustikgitarren und Westerngitarren - mit Beschriftung - 6x Stahlsaiten Akustik Western Gitarre, für Violine 4 Saiten-Set - Satz Geigensaiten für 4/4 Geige und elektrische Violine - Violinensaiten mit Beschriftung - 4x Saite aus Aluminium-Magnesium",,,
+Farbe,Farbe,STRING,False,VARIATION_THEME,HIGH,,"silberfarben, grau, weiß, schwarz, hellblau",,,
+Warnhinweise,Hinweise,STRING,True,PRODUCT_DETAILS,LOW,,Achtung! Richtige Saiten für passendes Instrument verwenden.,,,
+Geeignet für,Produktdetails,STRING,True,PRODUCT_DETAILS,LOW,,"E-Gitarre, E-Bass, Mandoline, Westerngitarre, Konzertgitarre",,,
+Material,Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Stahl, Nylon, Edelstahl",,,
+Grundfarbe,Farbe,STRING,True,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Allgemein,STRING,False,NAVIGATION,LOW,,,"neutral, männlich, weiblich",,
+Zielgruppe,Allgemein,STRING,False,NAVIGATION,LOW,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

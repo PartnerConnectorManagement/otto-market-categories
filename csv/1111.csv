@@ -1,0 +1,12 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Info,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,MEDIUM,,"MAGIC MAGS Schleich, Eldrador Creatures,, Adressanhänger Koffer Tag - Namensschild Schulranzen Gepäck Anhänger - Reise Gepäckanhänger aus Leder, in schöner Geschenkverpackung",,,
+Länge Schulterriemen,Maßangaben,FLOAT,False,PRODUCT_DETAILS,LOW,,,,,
+Set-Typ,Artikelbezeichnung,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Farbe,Farbe,STRING,False,"VARIATION_THEME, TOPINFO, PRODUCT_DETAILS",HIGH,,"bunt, helllila, schwarz, taupe, grün",,,
+Anzahl Teile,Artikelbezeichnung,INTEGER,False,"TITLE, VARIATION_THEME",LOW,,,,,
+Material,Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Leder, Metall, Synthetik, Kunstfaser, Kunststoff",,,
+Grundfarbe,Farbe,STRING,True,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Allgemein,STRING,False,NAVIGATION,MEDIUM,,,"neutral, männlich, weiblich",,
+Zielgruppe,Produktdetails,STRING,False,NAVIGATION,MEDIUM,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

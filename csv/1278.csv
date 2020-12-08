@@ -1,0 +1,11 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Material,Farbe & Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Nylon, Stahl, Chrom, Silikon, Baumwolle",,,
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Set-Typ,Produktdetails,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Größe,Maße & Gewicht,STRING,False,VARIATION_THEME,HIGH,,"16erPack, 8erPack, 16er-Pack, 8erPacl",,,
+Farbe,Farbe & Material,STRING,False,VARIATION_THEME,HIGH,,"grau, rot, hellblau, zyklam, edelstahlfarben",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Produktdetails,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,
+Zielgruppe,Produktdetails,STRING,False,NAVIGATION,HIGH,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

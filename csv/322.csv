@@ -1,0 +1,13 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Info,Kurzbezeichnung,STRING,False,TITLE,LOW,,Tauchmaske + Schnorchel,,,
+Set-Typ,Kurzbezeichnung,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Anzahl Teile,Kurzbezeichnung,INTEGER,False,"TITLE, VARIATION_THEME",LOW,,,,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Besondere Merkmale,Kurzbezeichnung,STRING,False,TITLE,LOW,,,,,
+Größe,Maße & Gewicht,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"M, S, L, L/XL (44-48), M/L (40-44)",,,
+Material,Farbe & Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Kunststoff, Silikon, Polyvinylchlorid (PVC), Nylon, Stahl",,,
+Farbe,Farbe & Material,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"blau, schwarz, grau, weiß, grün",,,
+Sportart,Produktdetails,STRING,True,PRODUCT_DETAILS,LOW,,"Aquafitness, Schwimmen, Tauchen, Schnorcheln, Alpinski",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Produktdetails,STRING,False,NAVIGATION,LOW,,,"neutral, männlich, weiblich",,
+Zielgruppe,Produktdetails,STRING,False,NAVIGATION,LOW,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

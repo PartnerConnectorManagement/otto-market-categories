@@ -1,0 +1,10 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Serie,Serie,STRING,False,,LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,HIGH,,"BxH: 55x61,5 cm, BxH: 55x60 cm",,,
+Höhe,Maße & Gewicht,FLOAT,False,"VARIATION_THEME, TOPINFO, PRODUCT_DETAILS",HIGH,,,,,
+Hinweis Maßangaben,Hinweise,STRING,False,PRODUCT_DETAILS,HIGH,,Alle Angaben sind ca.-Maße.,,,
+Breite,Maße & Gewicht,FLOAT,False,"VARIATION_THEME, TOPINFO, PRODUCT_DETAILS",HIGH,,,,,
+Tierart,Produktdetails,STRING,True,PRODUCT_DETAILS,HIGH,,"Fische, Garnelen, Reptilien, Zierfische, Amphibien",,,
+Tiefe,Maße & Gewicht,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Material,Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Polyurethan, Kokosfaser, Folie, Presskork, Korkrinde",,,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

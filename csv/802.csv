@@ -1,0 +1,7 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Allgemein,STRING,True,,LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,HIGH,,Kopfbügelpolster für HTC Vive Pro - Kunstleder Polster für VR Brille,,,
+Set-Typ,Allgemein,STRING,False,,LOW,,"Set, Packung, Spar-Set",,,
+Farbe,Farbe & Material,STRING,False,VARIATION_THEME,HIGH,,"schwarz, hellblau, messing, zyklam, edelstahlfarben",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

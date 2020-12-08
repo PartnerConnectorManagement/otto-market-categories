@@ -1,0 +1,9 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Allgemein,STRING,True,,LOW,,,,,
+Set-Typ,Allgemein,STRING,False,,LOW,,"Set, Packung, Spar-Set",,,
+Zubehör passend für,Allgemein,STRING,False,"TITLE, PRODUCT_DETAILS",HIGH,,alle AEG WX7 Fensterreiniger,,,
+Farbe,Farbe & Material,STRING,False,"VARIATION_THEME, TOPINFO, PRODUCT_DETAILS",HIGH,,"grau, hellblau, messing, zyklam, edelstahlfarben",,,
+Geschlecht,Allgemein,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

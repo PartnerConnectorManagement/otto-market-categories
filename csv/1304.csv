@@ -1,0 +1,13 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Durchmesser,Maßangaben,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,LOW,,mit Deckel,,,
+Serie,Serie,STRING,False,,LOW,,tabea,,,
+Farbe,Farbe,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"edelstahlfarben, weiß, transparent, aquablau, hellblau",,,
+Material Unterteil,Material,STRING,True,PRODUCT_DETAILS,LOW,,"Kunststoff, VG10 Formdamast-Mehrlagenstahl, Natur-Granit, Silikon, Nylon",,,
+Lieferumfang,Produktdetails,STRING,True,PRODUCT_DETAILS,LOW,,"Deckel, Halterung, Messlöffel, Vorratsdose, Einfüllhilfe",,,
+Höhe,Maßangaben,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",LOW,,,,,
+Material Deckel,Material,STRING,True,PRODUCT_DETAILS,LOW,,"Kunststoff, VG10 Formdamast-Mehrlagenstahl, Natur-Granit, Silikon, Nylon",,,
+Pflegehinweise,Hinweise,STRING,True,,LOW,,"spülmaschinengeeignet, Handwäsche, spülmaschinenfest",,,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Allgemein,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,
+Zielgruppe,Allgemein,STRING,False,NAVIGATION,LOW,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

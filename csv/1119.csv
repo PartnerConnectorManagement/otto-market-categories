@@ -1,0 +1,12 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,HIGH,,Back-Set,,,
+Lieferumfang,Produktdetails,STRING,True,PRODUCT_DETAILS,HIGH,,"2 Dekorierflaschen, 4 Spritztüllen, Cup Cake Auslöser",,,
+Set-Typ,Artikelbezeichnung,STRING,False,TITLE,LOW,,"Set, Inhalt, Packung, Spar-Set",,,
+Farbe,Farbe,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"transparent, rot, hellblau, messing, zyklam",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Fassungsvermögen,Maßangaben,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Material,Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Kunststoff, VG10 Formdamast-Mehrlagenstahl, Natur-Granit, Silikon, Stahl",,,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Allgemein,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,
+Zielgruppe,Allgemein,STRING,False,NAVIGATION,HIGH,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

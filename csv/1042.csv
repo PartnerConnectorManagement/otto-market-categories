@@ -1,0 +1,8 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,,LOW,,,,,
+Set-Typ,Produktdetails,STRING,False,,LOW,,"Set, Packung, Spar-Set",,,
+Warnhinweise,Hinweise,STRING,True,"LEGAL, PRODUCT_DETAILS",LOW,,"Es liegen keine Warnhinweise vor, Achtung! Enthält Lithium-Akku. Unbedingt Bedienungsanleitung beachten., Achtung! Nicht geeignet für Kinder unter 3 Jahren. Erstickungsgefahr aufgrund verschluckbarer Kleinteile. Aufbau durch einen Erwachsenen. Nicht in Ohrnähe anwenden. Missbrauch kann zu Gehörschäden führen., Achtung! Nicht in Ohrnähe anwenden. Missbrauch kann zu Gehörschäden führen., Achtung! Bitte lassen Sie Ihr Kind niemals unbeaufsichtigt mit dem Spielbogen zurück. Bitte stellen Sie den Artikel dem Kind nur in vollständig aufgebautem Zustand zur Verfügung",,,
+Material,Farbe & Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Kunststoff, Silikon, Nylon, Stahl, Baumwolle",,,
+Farbe,Farbe & Material,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"bunt, hellblau, zyklam, edelstahlfarben, ziegelrot",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

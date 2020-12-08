@@ -1,0 +1,11 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Artikelbezeichnung,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,LOW,,"für die Wand, elektrischer Korkenzieher, mit Ständer, 4-teilig, Edelstahl in Stonewash-Finish",,,
+Set-Info,Artikelbezeichnung,STRING,False,TITLE,LOW,,Weinset,,,
+Set-Bestandteile,Produktdetails,STRING,True,PRODUCT_DETAILS,LOW,,"Korkenzieher, Flaschenverschluss, Ausgießer, 2 Tropfringe, Weinthermometer",,,
+Material,Produktdetails,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Edelstahl, Metall, Kunststoff, Holz, Silikon",,,
+Farbe,Produktdetails,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",LOW,,"silberfarben, schwarz, weiß, edelstahlfarben, holzfarben",,,
+Anzahl Teile,Artikelbezeichnung,INTEGER,False,"TITLE, VARIATION_THEME",LOW,,,,,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Produktdetails,STRING,False,NAVIGATION,LOW,,,"neutral, männlich, weiblich",,
+Zielgruppe,Allgemein,STRING,False,NAVIGATION,LOW,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

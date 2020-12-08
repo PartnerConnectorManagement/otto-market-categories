@@ -1,0 +1,12 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,HIGH,,"mit großer Filzunterlage, mit großer Zugfläche",,,
+Set-Typ,Produktdetails,STRING,False,TITLE,LOW,,"Set, Kombi-Set, Packung, Komplett-Set, Spar-Set",,,
+Gewicht,Maßangaben,FLOAT,False,PRODUCT_DETAILS,LOW,,,,,
+Geeignet für,Produktdetails,STRING,True,PRODUCT_DETAILS,MEDIUM,,"Laminat, Parkett, Holzdielenböden, elastische Bodenbeläge, Laminat mit Trägerplatte",,,
+Materialstärke,Maßangaben,FLOAT,False,PRODUCT_DETAILS,LOW,,,,,
+Länge,Maßangaben,FLOAT,False,"TITLE, VARIATION_THEME, PRODUCT_DETAILS",LOW,,,,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Material,Farbe & Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Stahl, Filz, Recycling-Kunststoff, Aluminium, Edelstahl",,,
+Farbe,Farbe & Material,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",LOW,,"rot, blau, braun, lila, weiß",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

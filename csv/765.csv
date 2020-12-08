@@ -1,0 +1,13 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Länge,Maßangaben,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Set-Typ,Artikelbezeichnung,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Lieferumfang,Hinweise,STRING,True,PRODUCT_DETAILS,HIGH,,"Aufbewahrungsbox, Silikonaufsätze, Aufbewahrungsbeutel, Aufsatz, Kurzgebrauchsanleitung",,,
+Material,Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"thermoplastisches Gummi (TPR), Polyurethan, thermoplastischer Kunststoff (PP), ABS, Silikon",,,
+Farbe,Farbe,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"türkis, weiß, hellblau, zyklam, edelstahlfarben",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Set-Info,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Anwendung,Produktdetails,STRING,True,PRODUCT_DETAILS,HIGH,,Der Aufsatz wird sanft und vorsichtig in das Ohr eingeführt und das Gerät in die vorgegebene Pfeilrichtung gedreht.,,,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Allgemein,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,
+Zielgruppe,Allgemein,STRING,False,NAVIGATION,HIGH,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

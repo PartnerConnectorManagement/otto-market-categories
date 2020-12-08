@@ -1,0 +1,11 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Info,Produktdetails,STRING,False,,LOW,,,,,
+Set-Typ,Produktdetails,STRING,False,,LOW,,,,,
+Kompatible Hersteller,Produktdetails,STRING,True,PRODUCT_DETAILS,LOW,,GoPro,,,
+Material,Produktdetails,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",LOW,,Metall,,,
+Kompatible Modelle,Produktdetails,STRING,True,PRODUCT_DETAILS,LOW,,HERO 4 und HERO 3+,,,
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,HIGH,,"Filter, Polfilter, mit Magnethalterung, Objektivfilter zum Tauchen",,,
+Farbe,Farbe,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"schwarz, blau, orange, hellgelb, grau",,,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Produktdetails,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,
+Zielgruppe,Produktdetails,STRING,False,NAVIGATION,HIGH,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

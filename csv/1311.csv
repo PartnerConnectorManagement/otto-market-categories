@@ -1,0 +1,8 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Produktdetails,STRING,False,TITLE,LOW,,"Set, Kombi-Set, Packung, Komplett-Set, Spar-Set",,,
+Passend für,Produktdetails,STRING,False,PRODUCT_DETAILS,HIGH,,"benzinbetriebene Gartengeräte , M56-875DWA 3in1; M220-107TC; M200-107TC; M185-107TC; M155-107TC; M145-97TC; M125/97TC; M115-77TC; M125-107T; PM105; PM85; PM55, McCulloch Rasenmäher: M53-625CMDE; M51-160CMDA Alu; M53-625DE; M46-501CMDW; M51-551CMDW; M46-190AWREX; M51-140WRX; M46-140WR; M46-125R; M46-125; M40-125, McCulloch Kettensägen: CS 350; CS 380; CS 390; CS 390+; CS 410 Elite; CS 450 Elite, für benzinbetriebene Gartengeräte ",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Artikelhinweise,Hinweise,STRING,True,PRODUCT_DETAILS,HIGH,,Alle Angaben sind ca.-Angaben,,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

@@ -1,0 +1,11 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Besondere Merkmale,Details,STRING,False,"TITLE, PRODUCT_DETAILS",LOW,,,,,
+Größenhinweis,Maßangaben,STRING,False,PRODUCT_DETAILS,LOW,,"Fällt sehr weit aus, bitte zwei Größen kleiner bestellen., Fällt sehr klein aus, bitte zwei Größen größer bestellen., Fällt weit aus, bitte eine Größe kleiner bestellen., Fällt sehr eng aus, bitte zwei Größen größer bestellen., Fällt groß aus, bitte eine Größe kleiner bestellen.",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Artikelbezeichnung,STRING,True,,LOW,,"mit Schal und Mütze, mit Hosenkette, mit Leggings, mit Weste, mit Gürtel in Lederoptik",,,
+Set-Typ,Artikelbezeichnung,STRING,False,,LOW,,"Set, Packung, Spar-Set",,,
+Ausgabegröße,Größentext,STRING,False,VARIATION_THEME,LOW,,,,,
+Materialzusammensetzung,Material,STRING,False,"LEGAL, PRODUCT_DETAILS",LOW,,,,,
+Größentext,Größensystem,STRING,True,,HIGH,,"36 (EU) , 42 (EU) ,  XS (US), 46 (EU) ,  S (US)",,,
+Normalgrößen,Größensystem,INTEGER,True,FILTER,HIGH,,,"44, 66, 34, 56, 78, 46, 68, 36, 58, 48, 38, 70, 60, 50, 72, 40, 62, 30, 52, 74, 42, 64, 32, 54",,
+US-Größen,Größensystem,STRING,True,FILTER,HIGH,,,"14XL, 12XL, 10XL, 4XL, 5XL, 6XL, 7XL, 8XL, L, 9XL, M, XXL, XXS, S, XL, XS, XXXL",,

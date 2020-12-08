@@ -1,0 +1,12 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Produktdetails,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Besondere Merkmale,Produktdetails,STRING,True,TITLE,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Einbaubreite,Maße & Gewicht,INTEGER,False,PRODUCT_DETAILS,HIGH,,,,,
+Gewicht,Maße & Gewicht,FLOAT,False,PRODUCT_DETAILS,HIGH,,,,,
+Farbe,Farbe & Material,STRING,False,VARIATION_THEME,HIGH,,"schwarz, rot, hellblau, zyklam, edelstahlfarben",,,
+Bremsentyp,Produktdetails,STRING,False,PRODUCT_DETAILS,HIGH,,"Scheibenbremse, Felgenbremse",,,
+Lochanzahl,Produktdetails,INTEGER,False,PRODUCT_DETAILS,HIGH,,,,,
+Material,Farbe & Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Aluminium, Silikon, Stahl, Gummi, Materialmix",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

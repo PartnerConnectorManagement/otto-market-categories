@@ -1,0 +1,10 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Artikelbezeichnung,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Set-Info,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,LOW,,"aus Edelstahl 18/10, Edelstahl 18/10",,,
+Anzahl Teile,Artikelbezeichnung,INTEGER,False,"TITLE, VARIATION_THEME",LOW,,,,,
+Volumen,Produktdetails,STRING,False,"VARIATION_THEME, TOPINFO, PRODUCT_DETAILS",LOW,,"bis 1 Liter, bis 2 Liter, bis 5 Liter, bis 7 Liter, bis 9 Liter",,,
+Material,Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Kunststoff, Edelstahl, Stahl, Glas, Plastik",,,
+Farbe,Produktdetails,STRING,False,"VARIATION_THEME, TOPINFO, PRODUCT_DETAILS",LOW,,"silberfarben, hellblau, zyklam, edelstahlfarben, ziegelrot",,,
+Zielgruppe,Allgemein,STRING,False,NAVIGATION,LOW,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

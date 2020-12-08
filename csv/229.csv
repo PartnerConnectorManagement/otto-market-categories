@@ -1,0 +1,13 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Produktdetails,STRING,False,TITLE,LOW,,"Set, Kombi-Set, Packung, Komplett-Set, Spar-Set",,,
+Gewicht,Maßangaben,FLOAT,False,PRODUCT_DETAILS,HIGH,,,,,
+Passend für,Produktdetails,STRING,False,PRODUCT_DETAILS,HIGH,,"RORO-Dachfenster (Art. 263261 od. 802736) Fenstergröße 94 x 140 cm, Montage auf Ziegeldächern, RORO-Dachfenster (Art. 682891 od. 726120) Fenstergröße 54 x 78 cm, Montage auf Ziegeldächern, RORO-Dachfenster (Art. 222912 od. 745614) Fenstergröße 65 x 118 cm, Montage auf Ziegeldächern, RORO Dachfenster (Art. 468588 od. 730726) Fenstergröße 74 x 140 cm, Montage auf Ziegeldächern, RORO-Dachfenster (Art. 538133 od. 538402) Fenstergröße 114 x 140 cm, Montage auf Ziegeldächern",,,
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,HIGH,,"BxH: 94x140 cm, anthrazit, BxH: 114x140 cm, anthrazit, BxH: 65x118 cm, anthrazit, BxH: 74x140 cm, anthrazit, BxH: 54x78 cm, anthrazit",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Breite,Maßangaben,FLOAT,False,"TITLE, VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Höhe,Maßangaben,FLOAT,False,"TITLE, VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Artikelhinweise,Hinweise,STRING,True,PRODUCT_DETAILS,HIGH,,Alle Angaben sind ca.-Angaben,,,
+Material,Farbe & Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Aluminium, Titanzink, Kupfer",,,
+Farbe,Farbe & Material,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"anthrazit, lila, kupferfarben, gelb, natur",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

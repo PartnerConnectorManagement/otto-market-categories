@@ -1,0 +1,13 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,HIGH,,"zum Ausstechen und Dekorieren von Muffins, mit 2 Tüllen",,,
+Set-Typ,Artikelbezeichnung,STRING,False,TITLE,MEDIUM,,"Set, Inhalt, Packung, Spar-Set",,,
+Material,Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Silikon, Edelstahl, Kunststoff, VG10 Formdamast-Mehrlagenstahl, Natur-Granit",,,
+Farbe,Farbe,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"weiß, bunt, rot, hellblau, messing",,,
+Anzahl Teile,Artikelbezeichnung,INTEGER,False,"TITLE, VARIATION_THEME",MEDIUM,,,,,
+Fassungsvermögen,Maßangaben,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",MEDIUM,,,,,
+Pflegehinweise,Hinweise,STRING,True,PRODUCT_DETAILS,HIGH,,"spülmaschinengeeignet, Handwäsche, spülmaschinenfest",,,
+Grundfarbe,Farbe,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Allgemein,STRING,False,NAVIGATION,HIGH,,,"neutral, männlich, weiblich",,
+Zielgruppe,Allgemein,STRING,False,NAVIGATION,HIGH,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,

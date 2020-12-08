@@ -1,0 +1,12 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Serie,Serie,STRING,False,,LOW,,"London, Dubai",,,
+Set-Typ,Produktdetails,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Gewicht,Maßangaben,FLOAT,False,PRODUCT_DETAILS,HIGH,,,,,
+Passend für,Produktdetails,STRING,False,"TITLE, PRODUCT_DETAILS",HIGH,,"Wismar Gelenkarmmarkisen Breite: 450 cm, Wismar Gelenkarmmarkisen Breite: 250 cm, Terrassendach »Dubai«, Wismar Gelenkarmmarkisen Breite: 550 cm, Wismar Gelenkarmmarkisen Breite: 300 cm",,,
+Hinweis Maßangaben,Hinweise,STRING,False,PRODUCT_DETAILS,HIGH,,Alle Angaben sind ca.-Maße.,,,
+Breite,Maßangaben,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Material,Farbe & Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Aluminium, Polyester",,,
+Farbe,Farbe & Material,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"silberfarben, grau, blau, weiß, gelb",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

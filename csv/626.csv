@@ -1,0 +1,8 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Farbe,Farbe,STRING,False,VARIATION_THEME,HIGH,,"weiß, schwarz, roségoldfarben, hellblau, messing",,,
+Besondere Merkmale,Artikelbezeichnung,STRING,False,TITLE,HIGH,,"E27 Fassung mit Deckenbefestigung - Lampenaufhängung mit 80cm Kabel - Schnurpendel Pendelleuchte Hängeleuchte Lampenschirm, 10x Lampensockel Adapter Konverter - E40 Fassung auf E27 Sockel Lampenadapter - Lampensockeladapter für LED Halogen Energiespar Lampen, E27 Metall Fassung mit Textilkabel - Lampensockel Halterung mit 90cm Kabel und Deckenbefestigung - E 27 Lampenaufhängung, 10x GU5.3 Fassung mit 12V Kabel - MR16 Bauform - 0,5mm² Kabeldurchmesser - Keramik Sockel - GU 5.3 Fassungen Set Halogen und LED Leuchtmittel, 11x GU5.3 Fassung mit 12V Kabel - MR16 Bauform - 0,75mm² Kabeldurchmesser - Keramik Sockel - GU 5.3 Fassungen Halogen und LED Leuchtmittel",,,
+Set-Info,Artikelbezeichnung,STRING,False,TITLE,LOW,,,,,
+Set-Typ,Artikelbezeichnung,STRING,False,TITLE,LOW,,"Set, Inhalt, Packung, Spar-Set",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Material,Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Kunststoff, Kupfer, ABS, PBT",,,
+Grundfarbe,Farbe,STRING,True,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,

@@ -1,0 +1,13 @@
+name,attributeGroup,type,multiValue,featureRelevance,relevance,description,exampleValues,allowedValues,recommendedValues,reference
+Set-Typ,Produktdetails,STRING,False,TITLE,LOW,,"Set, Packung, Spar-Set",,,
+Serie,Serie,STRING,False,,LOW,,,,,
+Set-Info,Produktdetails,STRING,False,TITLE,LOW,,,,,
+Besondere Merkmale,Produktdetails,STRING,False,TITLE,HIGH,,"10 Stück, 165 mm für eckige Trampoline, 10 Stück, 165 mm für runde Trampoline, 10 Stück, 140 mm",,,
+Länge,Maße & Gewicht,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Material,Farbe & Material,STRING,False,"VARIATION_THEME, FILTER, PRODUCT_DETAILS",HIGH,,"Stahl, Silikon, Nylon, Baumwolle, Leder",,,
+Farbe,Farbe & Material,STRING,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,"goldfarben, silberfarben, hellblau, zyklam, edelstahlfarben",,,
+Breite,Maße & Gewicht,FLOAT,False,"VARIATION_THEME, PRODUCT_DETAILS",HIGH,,,,,
+Sportart,Produktdetails,STRING,True,PRODUCT_DETAILS,MEDIUM,,"Trampolinturnen, Alpinski, Rugby, Trekking, Kampfsport",,,
+Grundfarbe,Farbe & Material,STRING,False,FILTER,HIGH,,,"lila, gelb, natur, schwarz, grün, silberfarben, grau, blau, braun, orange, weiß, goldfarben, rot, bunt, rosa",,
+Geschlecht,Produktdetails,STRING,False,NAVIGATION,LOW,,,"neutral, männlich, weiblich",,
+Zielgruppe,Produktdetails,STRING,False,NAVIGATION,LOW,,,"zielgruppenunabhängig, Babys, Jugendliche, Kinder, Erwachsene",,
