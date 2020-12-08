@@ -11,3 +11,4 @@ cp *.css public/
 cp *.js public/
 cp -a images/. public/images
 cp -a jsons/. public/jsons
+cp -a csv/. public/csv
