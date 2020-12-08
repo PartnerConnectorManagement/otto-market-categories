@@ -14,7 +14,25 @@
             import Fuse from 'https://cdn.jsdelivr.net/npm/fuse.js@6.4.3/dist/fuse.esm.js'
         </script>
 
+        <div id="topBar"><img id="topBarimg" src="images/logo.png"></div>
+        <div id="SideBar">
+            <div class="sideBarItem sideBarSelected" id="create">
+                Categories
+            </div>
+        
+        </div>
+        <div id="spacer"></div>
+        <div id="content">
+            <h1>Categories</h1>
+            <div id="line"></div>
+        
+            
+            <input id="itemInput" type="text" onkeyup="search()">
+            <input type="number" min="1" max="2000" value="100" id="maxLength" onchange="search()">
+            <div id="output"></div>
+        </div>  
         <script>
+            var path = '';
             window.onload = function() {
                 search();
             }
@@ -45,19 +63,37 @@
 
                 let searchItem = document.getElementById('itemInput').value;
                 let output = ''
+                let maxLength = document.getElementById('maxLength').value
                 if (searchItem == '') {
-                    for (let i = 0; i < index.length; i++) {
-                        output += '<div class="item">' + index[i].n + ' (' + index[i].g +') <div onmousedown="window.location=\'onecategorie.html?index='+ index[i].i + '\'" class="itemButton">Open</div></div>'
+                    let length = index.length;
+
+                    if (length > maxLength) {
+                        length = maxLength
+                    }
+
+                    for (let i = 0; i < length; i++) {
+                        let href = path + 'csv/' + index[i].i + '.csv'
+                        let fileName = index[i].g + '.csv'
+                        let downloadButton = '<a class="download2" href="'+ href  +'" download="' + fileName +'">Download</a>'
+                        output += '<div class="item">' + index[i].n + ' (' + index[i].g +') <div onmousedown="window.location=\'onecategorie.html?index='+ index[i].i + '\'" class="itemButton">Open</div>' + downloadButton +  '</div>'
                     }
                 } else {
                     console.log(index);
 
                     result = fuse.search(searchItem)
                     console.log(result);
-                    
 
-                    for (let i = 0; i < result.length; i++) {
-                        output += '<div class="item">' + result[i].item.n + ' (' + result[i].item.g +') <div onmousedown="window.location=\'onecategorie.html?index='+ result[i].item.i + '\'" class="itemButton">Open</div></div>'
+                    let length = index.length;
+
+                    if (length > maxLength) {
+                        length = maxLength
+                    }
+
+                    for (let i = 0; i < length; i++) {
+                        let href = 'csv/' + index[i].i + '.csv'
+                        let fileName = index[i].g + '.csv'
+                        let downloadButton = '<a class="download2" href="'+ href  +'" download="' + fileName +'">Download</a>'
+                        output += '<div class="item">' + result[i].item.n + ' (' + result[i].item.g +') <div onmousedown="window.location=\'onecategorie.html?index='+ result[i].item.i + '\'" class="itemButton">Open</div>' + downloadButton + '</div>'
                     }
                 }
 
@@ -69,23 +105,7 @@
 
 
 
-        <div id="topBar"><img id="topBarimg" src="images/logo.png"></div>
-        <div id="SideBar">
-            <div class="sideBarItem sideBarSelected" id="create">
-                Categories
-            </div>
         
-        </div>
-        <div id="spacer"></div>
-        <div id="content">
-            <h1>Categories</h1>
-            <div id="line"></div>
-        
-            
-            <input id="itemInput" type="text" onkeyup="search()">
-
-            <div id="output"></div>
-        </div>
        
        
 
