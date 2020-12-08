@@ -4,101 +4,10 @@
         <script src="index.js"></script>
         <link href="style.css" rel="stylesheet">
 
-        <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
         <meta charset="utf-8"/>
     </head>
 
     <body>
-        <script>
-            
-            let result;
-
-            function pushByValue(helper, attributes, value) {
-                for (let i = 0; i < attributes.length; i++) {
-                    if (attributes[i].relevance === value) {
-                        helper.push(attributes[i])
-                    }
-                }
-                return helper;
-            }
-
-            function sortByRelevance(attributes) {
-                let helper = []
-                helper = pushByValue(helper, attributes, 'HIGH');
-                helper = pushByValue(helper, attributes, 'MEDIUM');
-                helper = pushByValue(helper, attributes, 'LOW');
-
-                return helper;
-            }
-
-            function printAttributes(attributes) {
-                let output = ''
-                output += '<tr><th class="header nameColunmHeader">Name</th><th class="header firstColunm">attributeGroup</th><th class="header">type</th><th class="header">multiValue</th><th class="header">featureRelevance</th><th class="header">relevance</th><th class="header">description</th><th class="header">exampleValues</th><th class="header">reference</th></tr>';
-                for (let i = 0; i < attributes.length; i++) {
-                    output += '<tr class="row">';
-                    output += '<td class="rowitem nameColunm">' + attributes[i].name + '</td>'
-                    output += '<td class="rowitem">' + attributes[i].attributeGroup + '</td>'
-                    output += '<td class="rowitem">' + attributes[i].type + '</td>'
-                    output += '<td class="rowitem">' + attributes[i].multiValue + '</td>'
-
-                    output += '<td class="rowitem"><ul>'
-
-                    for (let ii = 0; ii < attributes[i].featureRelevance.length; ii++) {
-                        output += '<li>' + attributes[i].featureRelevance[ii] + '</li>'
-                    
-                    } 
-                    output += '</ul></td>'
-
-
-                    
-                    output += '<td class="rowitem">' + attributes[i].relevance + '</td>'
-                    output += '<td class="rowitem">' + attributes[i].description + '</td>'
-
-                    output += '<td class="rowitem exampleValues"><ul>'
-                    if (attributes[i].exampleValues != null) {
-                        for (let ii = 0; ii < attributes[i].exampleValues.length; ii++) {
-                            output += '<li>' + attributes[i].exampleValues[ii] + '</li>'
-
-                    }
-                    }
-                    
-                    output += '</ul></td>'
-
-                    output += '<td class="rowitem">' + attributes[i].reference + '</td>'
-
-                    output += '</tr>';
-
-                }
-                document.getElementById('attributeTable').innerHTML = output
-            }
-            
-            loadItems()
-            function loadItems() {
-                var url_string = window.location.href;
-                var url  = new URL(url_string);
-                var index = url.searchParams.get('index')
-                console.log(index)
-
-                var xhttp = new XMLHttpRequest()
-
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        
-                        let json = JSON.parse(this.responseText)
-                        console.log(json);
-                        result = json;
-                        //console.log(sortByProperty(json.attributes, 'featureRelevance', 1))
-                        document.getElementById('heading').innerHTML = 'Categories > ' + json.categoryGroup;
-                        
-                        printAttributes(sortByRelevance(json.attributes))
-
-                    }
-                };
-                xhttp.open('GET', '/otto-market-categories/jsons/' + index + '.json', true);
-                xhttp.send();
-            }
-        </script>
-
         <div id="topBar"><img id="topBarimg" src="images/logo.png"></div>
         <div id="SideBar">
             <div class="sideBarItem sideBarSelected" id="create">
@@ -110,8 +19,12 @@
         <div id="content">
             <h1 id="heading" onmousedown="console.log(result)">Categories > </h1>
             <div id="line"></div>
-            <div id="backButton" onmousedown="window.location = '/otto-market-categories/'">Zurück</div>
-            
+
+           
+            <div id="backButton" onmousedown="window.location = 'index.html'">Zurück</div>
+            <a id="download" href="path_to_file" download="proposed_file_name">Download</a>
+           
+
             <div id="table">
                 <table id="attributeTable">
                     <tr>
@@ -147,6 +60,132 @@
 
 
         </div>
+
+        <script>
+            
+            let result;
+            var path = '';
+
+            function pushByValue(helper, attributes, value) {
+                for (let i = 0; i < attributes.length; i++) {
+                    if (attributes[i].relevance === value) {
+                        helper.push(attributes[i])
+                    }
+                }
+                return helper;
+            }
+
+            function sortByRelevance(attributes) {
+                let helper = []
+                helper = pushByValue(helper, attributes, 'HIGH');
+                helper = pushByValue(helper, attributes, 'MEDIUM');
+                helper = pushByValue(helper, attributes, 'LOW');
+
+                return helper;
+            }
+
+            function printAttributes(attributes) {
+                let output = ''
+                output += '<tr><th class="header nameColunmHeader">Name</th><th class="header firstColunm">attributeGroup</th><th class="header">type</th><th class="header">multiValue</th><th class="header">featureRelevance</th><th class="header">relevance</th><th class="header">description</th><th class="header">exampleValues</th><th class="header">allowedValues</th><th class="header">recommendedValues</th><th class="header">reference</th></tr>';
+                for (let i = 0; i < attributes.length; i++) {
+                    output += '<tr class="row">';
+                    output += '<td class="rowitem nameColunm">' + attributes[i].name + '</td>'
+                    output += '<td class="rowitem">' + attributes[i].attributeGroup + '</td>'
+                    output += '<td class="rowitem">' + attributes[i].type + '</td>'
+                    output += '<td class="rowitem">' + attributes[i].multiValue + '</td>'
+
+                    output += '<td class="rowitem"><ul>'
+
+                    for (let ii = 0; ii < attributes[i].featureRelevance.length; ii++) {
+                        output += '<li>' + attributes[i].featureRelevance[ii] + '</li>'
+                    
+                    } 
+                    output += '</ul></td>'
+
+
+                    
+                    output += '<td class="rowitem">' + attributes[i].relevance + '</td>'
+                    output += '<td class="rowitem">' + attributes[i].description + '</td>'
+
+                    output += '<td class="rowitem exampleValues"><ul>'
+                    if (attributes[i].exampleValues != null) {
+                        for (let ii = 0; ii < attributes[i].exampleValues.length; ii++) {
+                            output += '<li>' + attributes[i].exampleValues[ii] + '</li>'
+
+                        }
+                    }
+                    output += '</ul></td>'
+
+                    output += '<td class="rowitem exampleValues"><ul>'
+                    if (attributes[i].allowedValues != null) {
+                        for (let ii = 0; ii < attributes[i].allowedValues.length; ii++) {
+                            output += '<li>' + attributes[i].allowedValues[ii] + '</li>'
+
+                        }
+                    }
+                    output += '</ul></td>'
+
+                    output += '<td class="rowitem exampleValues"><ul>'
+                    if (attributes[i].recommendedValues != null) {
+                        for (let ii = 0; ii < attributes[i].recommendedValues.length; ii++) {
+                            output += '<li>' + attributes[i].recommendedValues[ii] + '</li>'
+
+                        }
+                    }
+                    output += '</ul></td>'
+
+
+                    output += '<td class="rowitem">' + attributes[i].reference + '</td>'
+
+                    output += '</tr>';
+
+                }
+                document.getElementById('attributeTable').innerHTML = output
+            }
+            
+            loadItems()
+            function loadItems() {
+                var url_string = window.location.href;
+                var url  = new URL(url_string);
+                var index = url.searchParams.get('index')
+
+                
+                console.log(index)
+
+                var xhttp = new XMLHttpRequest()
+
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        
+                        let json = JSON.parse(this.responseText)
+                        console.log(json);
+                        result = json;
+                        //console.log(sortByProperty(json.attributes, 'featureRelevance', 1))
+                        document.getElementById('heading').innerHTML = 'Categories > ' + json.categoryGroup;
+                        
+                        var filename = json.categoryGroup;
+                        document.getElementById('download').download = filename +  '.csv'
+                        printAttributes(sortByRelevance(json.attributes))
+
+                    }
+                };
+                xhttp.open('GET', path + 'jsons/' + index + '.json', true);
+                xhttp.send();
+            }
+        </script>
+
+        
+
+        <script>
+            var url_string = window.location.href;
+            var url  = new URL(url_string);
+            var index2 = url.searchParams.get('index')
+            
+            document.getElementById('download').href = path + 'csv/' + index2 + '.csv';
+
+            //document.getElementById('backButton').onmousedown = 'window.location = \'' + path + '/\''
+            
+        </script>
        
        
 
