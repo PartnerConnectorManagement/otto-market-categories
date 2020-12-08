@@ -3,6 +3,7 @@ mkdir public
 mkdir public/images
 mkdir public/jsons
 mkdir jsons
+mkdir csv
 python3 download.py
 
 cp *.html public/
